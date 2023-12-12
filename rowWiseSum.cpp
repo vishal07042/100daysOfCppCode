@@ -6,6 +6,34 @@ void rowWiseSum(){
 
 }
 
+void findingLargeestRow(int arr[][4]){
+    int maxi = INT_MIN;
+    for (int  i = 0; i < 3; i++)
+    {
+        int sum=0;
+        
+
+        for (int j = 0; j < 4; j++)
+        {
+
+               sum=sum+arr[i][j];
+
+           
+        }
+
+
+        if(sum>maxi){
+            maxi=sum;
+
+           
+            
+        }
+        
+       
+    }
+    
+}
+
 int main()
 {
 
